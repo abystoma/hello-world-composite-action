@@ -2,7 +2,7 @@ name: 'Hello World'
 description: 'Greet someone'
 inputs:
   who-to-greet:  # id of input
-    description: 'Who to greet'
+    description: 'Greet'
     required: true
     default: 'World'
 
@@ -20,5 +20,5 @@ runs:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
 
     - name: Run goodbye.sh
-      run: ./goodbye.sh
+      run: goodbye.sh
       shell: bash
